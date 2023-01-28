@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header h3 {
+  width: 90%;
+  text-align: right;
+  font-size: 20px;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.tabs {
+  max-width: 50%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ====== */
+/* SUMMARY */
+/* ====== */
+.summary {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.show-numbers {
+  padding: 1rem 2rem;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-numbers h2,
+.show-numbers h5 {
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.show-numbers h2 {
+  font-size: 40px;
+}
+
+.show-numbers h5 {
+  font-size: 15px;
+}
+
+.graph-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+/* ====== */
+/* EVENTS */
+/* ====== */
+/* Main Body */
+.container {
+  max-width: 93%;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* ASIDE */
+.aside {
+  width: 370px;
+  padding: 10px;
+}
+
+.input-group {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.input-btns {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+}
+
+.btn-search,
+.btn-reset {
+  border: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.05);
+  transition-duration: 300ms;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-search:hover,
+.btn-reset:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 0px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-search:active,
+.btn-reset:active {
+  transform: translateY(0);
+}
+
+.btn-search {
+  background-color: #ff01ff;
+  color: #fff;
+}
+
+.btn-reset {
+  background-color: red;
+  color: #fff;
+}
+
+.input-group h2 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #bbb;
+  text-align: right;
+}
+
+.main {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
